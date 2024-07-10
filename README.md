@@ -55,12 +55,12 @@ system.
                 - Id, name, email
             - Comments => Link to tickets table M:1
                 - Id, FK-ticket, comment
-4. Create Help Desk Management API [ ]
-    - /tickets - GET All [ ]
-    - /ticket/:id - GET :id [ ]
-    - /ticket/ - POST [ ]
-    - /ticket/:id/changeStatus - PUT :id [ ]
-    - /ticket/:id/sendComment - POST :id [ ]
+4. Create Help Desk Management API [✔]
+    - /tickets - GET All [✔]
+    - /ticket/:id - GET :id [✔]
+    - /ticket/ - POST [✔]
+    - /ticket/:id/changeStatus - PUT :id [✔]
+    - /ticket/:id/sendComment - POST :id [✔]
 5. Deploy to Vercel [ ]
     -
 
