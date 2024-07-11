@@ -4,18 +4,18 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Home from './views/Home';
-import Staff from './views/Staff';
-import NotFound from './views/NotFound';
+import Home from './views/Home.tsx';
+import Staff from './views/Staff.tsx';
+import NotFound from './views/NotFound.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/">
-        <Route index element={Home} />
-        <Route path="staff" element={Staff} />
-        <Route path="*" element={NotFound} />
+        <Route index element={<Home />} />
+        <Route path="staff" element={<Staff />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   </BrowserRouter>
